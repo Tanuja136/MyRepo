@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+
+    <h2>1. onclick Event</h2>
+
+    <button onclick="clickEvent()">
+        Click Me
+    </button>
+
+    <hr>
+
+
+    <h2>2. ondblclick Event</h2>
+
+    <button ondblclick="doubleClickEvent()">
+        Double Click Me
+    </button>
+
+    <hr>
+
+
+    <h2>3. onchange Event</h2>
+
+    <input type="text" onchange="changeEvent()">
+
+    <hr>
+
+
+    <!-- <h2>4. onmouseover Event</h2>
+
+    <h3 onmouseover="mouseOverEvent()">
+        Hover On Me
+    </h3>
+
+    <hr> 
+
+
+     <h2>5. onmouseout Event</h2>
+
+    <h3 onmouseout="mouseOutEvent()">
+        Move Mouse Away
+    </h3> -->
+
+    <hr>
+
+
+    <h2>6. onkeydown Event</h2>
+
+    <input type="text" onkeydown="keyDownEvent()">
+
+    <hr>
+
+
+    <h2>7. onkeyup Event</h2>
+
+    <input type="text" onkeyup="keyUpEvent()">
+
+    <hr>
+
+<!-- 
+    <h2>8. onfocus Event</h2>
+
+    <input type="text" onfocus="focusEvent()">
+
+    <hr> -->
+
+
+    <h2>9. onblur Event</h2>
+
+    <input type="text" onblur="blurEvent()">
+
+    <hr>
+
+
+    <script>
+
+        // onclick
+
+        function clickEvent(){
+
+            alert("Button Clicked");
+
+        }
+
+
+        // ondblclick
+
+        function doubleClickEvent(){
+
+            alert("Button Double Clicked");
+
+        }
+
+
+        // onchange
+
+        function changeEvent(){
+
+            alert("Input Value Changed");
+
+        }
+
+
+        // onmouseover
+
+        function mouseOverEvent(){
+
+            alert("Mouse Entered");
+
+        }
+
+
+        // onmouseout
+
+        function mouseOutEvent(){
+
+            alert("Mouse Left");
+
+        }
+
+
+        // onkeydown
+
+        function keyDownEvent(){
+
+            console.log("Key Pressed");
+
+        }
+
+
+        // onkeyup
+
+        function keyUpEvent(){
+
+            console.log("Key Released");
+
+        }
+
+
+        // onfocus
+
+        function focusEvent(){
+
+            alert("Input Focused");
+
+        }
+
+
+        // onblur
+
+        function blurEvent(){
+
+            alert("Input Lost Focus");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            .box{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                animation-name: move;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function:ease-in-out;
+            }
+            @keyframes move{
+                from{
+                    background-color: red;
+                    margin-left: 0px;
+                }
+                to{
+                    background-color: blue;
+                    margin-left: 300px;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

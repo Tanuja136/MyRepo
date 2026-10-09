@@ -1,0 +1,203 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+
+<script>
+
+
+let fruits = ["Apple","Mango","Orange"];
+
+console.log("Original Array :", fruits);
+console.log("Length :", fruits.length);
+
+
+fruits.push("Banana");
+console.log("After Push :", fruits);
+
+fruits.pop();
+console.log("After Pop :", fruits);
+
+fruits.unshift("Grapes");
+console.log("After Unshift :", fruits);
+
+fruits.shift();
+console.log("After Shift :", fruits);
+
+fruits.splice(1,0,"Banana");
+console.log("After Splice Add :", fruits);
+
+
+// Remove element using splice
+
+fruits.splice(2,1);
+
+console.log("After Splice Remove :", fruits);
+
+
+// =====================================
+// slice()
+// Get values between positions
+// Does NOT affect original array
+// =====================================
+
+let newArray = fruits.slice(0,2);
+
+console.log("Slice Output :", newArray);
+
+console.log("Original Array :", fruits);
+
+
+// =====================================
+// map()
+// Used to iterate array
+// =====================================
+
+fruits.map((ele)=>{
+
+    console.log(ele);
+
+});
+
+
+
+// =====================================
+// OBJECTS
+// =====================================
+
+let student = {
+
+    name : "Tanu",
+
+    age : 20,
+
+    branch : "ECE"
+
+};
+
+console.log(student);
+
+
+// =====================================
+// Access Object Values
+// =====================================
+
+console.log(student.name);
+
+console.log(student.age);
+
+console.log(student.branch);
+
+
+// =====================================
+// Update Object Value
+// =====================================
+
+student.age = 21;
+
+console.log(student);
+
+
+// =====================================
+// Add New Property
+// =====================================
+
+student.city = "Hyderabad";
+
+console.log(student);
+
+
+// =====================================
+// Delete Property
+// =====================================
+
+delete student.branch;
+
+console.log(student);
+
+
+// =====================================
+// Object.keys()
+// Gives ONLY KEYS
+// =====================================
+
+console.log(Object.keys(student));
+
+
+// =====================================
+// Object.values()
+// Gives ONLY VALUES
+// =====================================
+
+console.log(Object.values(student));
+
+
+// =====================================
+// Object.entries()
+// Gives KEY + VALUE PAIRS
+// =====================================
+
+console.log(Object.entries(student));
+
+
+// =====================================
+// Loop Through Object Entries
+// =====================================
+
+Object.entries(student).map((ele)=>{
+
+    console.log(ele);
+
+});
+
+</script>
+
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let fruits = ["Apple","Mango","Orange"];
+            console.log(fruits);
+            console.log(fruits.length);
+            console.log(fruits[0]);
+            fruits.splice(1,0,"Banana");
+            console.log(fruits);
+            let newArray = fruits.slice(1,2);
+            console.log(newArray);
+
+            const details = {
+                name : "Tanu",
+                age : 20,
+                branch : "ECE"
+            }
+            console.log(details);
+            console.log(details.name);
+            details.age = 21;
+            console.log(details);
+            console.log(Object.keys(details));
+            console.log(Object.values(details));
+            console.log(Object.entries(details));
+        </script>
+    </body>
+</html>

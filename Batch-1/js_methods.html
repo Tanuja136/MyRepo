@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Math.random());
+        console.log(Math.floor(Math.random()*10) + 1);
+
+        console.log(Math.floor(5.9));
+        console.log(Math.ceil(5.1));
+
+        console.log(Math.max(12, 45, 8, 90));
+        console.log(Math.min(12, 45, 8, 90));
+
+        let today = new Date();
+        console.log(today);
+
+        console.log(today.getFullYear());
+        console.log(today.getMonth() + 1);
+        console.log(today.getDate());
+        console.log(today.getDay());
+        console.log(today.getHours());
+        console.log(today.getMinutes());
+        console.log(today.getSeconds());
+
+
+        setTimeout(function() {
+            alert("Welcome!");
+        }, 3000); 
+
+        setInterval(function() {
+            console.log("Hello");
+        }, 5000);
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+p{
+    color:red;
+    font-size: 30px;
+    background-color: yellow;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    background-image: url('https://i1-e.pinimg.com/webp85/736x/01/df/1b/01df1bd93f91721addf71ed0aeb1103a.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

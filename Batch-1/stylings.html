@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+    <title>CSS Shapes & Transform</title>
+
+    <style>
+        .main{
+            display:flex;
+            justify-content:space-evenly;
+            margin-top:50px;
+        }
+
+        .box1{
+            height:200px;
+            width:200px;
+            background-color:lightblue;
+            border: 2px solid red;
+            border-radius:20px;
+            /* text-align:center; */
+            transition:1s;
+        }
+
+        .box1:hover{
+            transform:scale(2);
+        }
+
+        .box2{
+            height:200px;
+            width:200px;
+            background-color:pink;
+            border:5px solid red;
+            border-radius:20px;
+            /* text-align:center; */
+            transition:1s;
+        }
+
+        .box2:hover{
+            transform:rotate(360deg);
+        }
+
+        .box3{
+            height:200px;
+            width:200px;
+            background-color:lightgreen;
+            border:5px solid green;
+            border-radius:50px;
+            text-align:center;
+            transition:1s;
+        }
+
+        .box3:hover{
+            transform:translateX(-100px);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="box1">
+
+        </div>
+
+
+        <div class="box2">
+        </div>
+
+
+        <div class="box3">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

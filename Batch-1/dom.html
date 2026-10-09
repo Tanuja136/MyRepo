@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Practice</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #box {
+            width: 200px;
+            height: 100px;
+            background: lightgray;
+            margin: 20px auto;
+            line-height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="title">Welcome Student</h1>
+
+    <p id="para">
+        Learning JavaScript DOM
+    </p>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <br><br>
+
+    <h2 id="result"></h2>
+
+<img id="photo" src="dog.jpeg">
+
+    <br>
+
+    <div id="box">
+        DOM Box
+    </div>
+
+    <p id="hideText">
+        This text can be hidden.
+    </p>
+
+    <button onclick="changeHeading()">
+        Change Heading
+    </button>
+
+    <button onclick="changeColor()">
+        Change Color
+    </button>
+
+    <button onclick="showName()">
+        Show Name
+    </button>
+
+    <button onclick="changeImage()">
+        Change Image
+    </button>
+
+    <button onclick="designBox()">
+        Design Box
+    </button>
+
+    <button onclick="hideParagraph()">
+        Hide Paragraph
+    </button>
+
+    <button onclick="showParagraph()">
+        Show Paragraph
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

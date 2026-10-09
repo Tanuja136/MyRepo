@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Day 8</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #clock {
+            font-size: 35px;
+            color: blue;
+            margin-top: 20px;
+        }
+
+        #output {
+            font-size: 22px;
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>JavaScript Built-in Objects</h1>
+
+        <h2>Math Object</h2>
+
+        <button onclick="randomNumber()">Math.random()</button>
+
+        <button onclick="floorNumber()">Math.floor()</button>
+
+        <button onclick="ceilNumber()">Math.ceil()</button>
+
+        <button onclick="maxNumber()">Math.max()</button>
+
+        <button onclick="minNumber()">Math.min()</button>
+
+        <hr>
+
+        <h2>Date Object</h2>
+
+        <button onclick="showDate()">Current Date</button>
+
+        <button onclick="showTime()">Current Time</button>
+
+        <hr>
+
+        <h2>Timing Functions</h2>
+
+        <button onclick="showMessage()">setTimeout()</button>
+
+        <button onclick="startClock()">setInterval()</button>
+
+        <h2 id="clock"></h2>
+
+        <h2 id="output"></h2>
+
+    </div>
+
+    <script>
+
+        function randomNumber() {
+
+            let num = Math.floor(Math.random() * 100) + 1;
+
+            document.getElementById("output").innerHTML =
+                "Random Number : " + num;
+
+        }
+
+        function floorNumber() {
+
+            let num = Math.floor(7.9);
+
+            document.getElementById("output").innerHTML =
+                "Math.floor(7.9) = " + num;
+
+        }
+
+        function ceilNumber() {
+
+            let num = Math.ceil(7.2);
+
+            document.getElementById("output").innerHTML =
+                "Math.ceil(7.2) = " + num;
+
+        }
+
+        function maxNumber() {
+
+            let num = Math.max(20, 50, 90, 35, 10);
+
+            document.getElementById("output").innerHTML =
+                "Maximum Number : " + num;
+
+        }
+
+        function minNumber() {
+
+            let num = Math.min(20, 50, 90, 35, 10);
+
+            document.getElementById("output").innerHTML =
+                "Minimum Number : " + num;
+
+        }
+
+        function showDate() {
+
+            let today = new Date();
+
+            let date =
+                today.getDate() + "/" +
+                (today.getMonth() + 1) + "/" +
+                today.getFullYear();
+
+            document.getElementById("output").innerHTML =
+                "Today's Date : " + date;
+
+        }
+
+        function showTime() {
+
+            let today = new Date();
+
+            let time =
+                today.getHours() + ":" +
+                today.getMinutes() + ":" +
+                today.getSeconds();
+
+            document.getElementById("output").innerHTML =
+                "Current Time : " + time;
+
+        }
+
+        function showMessage() {
+
+            document.getElementById("output").innerHTML =
+                "Wait for 3 seconds...";
+
+            setTimeout(function () {
+
+                alert("Welcome to JavaScript!");
+
+            }, 3000);
+
+        }
+
+        function startClock() {
+
+            setInterval(function () {
+
+                let today = new Date();
+
+                let time =
+                    today.getHours() + ":" +
+                    today.getMinutes() + ":" +
+                    today.getSeconds();
+
+                document.getElementById("clock").innerHTML = time;
+
+            }, 1000);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
